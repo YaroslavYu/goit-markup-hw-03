@@ -236,7 +236,7 @@ img {
 }
 
 .benefits-item {
-    width: calc((100%-30*30)/4);
+    width: calc((100%-30*3)/4);
 }
 
 /* section what we do */
