@@ -26,7 +26,6 @@ body {
     letter-spacing: 0.03em;
 }
 
-
 .links {
     text-decoration: none;
 }
@@ -43,6 +42,12 @@ ul {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* background-color header, section benefits, section what we do */
@@ -115,7 +120,6 @@ ul {
     color: var(--accent-color);
 }
 
-
 .header-nav {
     display: flex;
     margin-right: auto;
@@ -149,7 +153,6 @@ ul {
     border: 1px solid #ECECEC;
 }
 
-
 /* HERO */
 
 .hero,
@@ -159,7 +162,6 @@ ul {
 
 .hero {
     text-align: center;
-    letter-spacing: 0.06em;
     padding-top: 200px;
     padding-bottom: 200px;
 }
@@ -171,17 +173,20 @@ ul {
     text-transform: uppercase;
     color: var(--footer-logo-hero-mainbackgr-color);
     margin-bottom: 30px;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-button {
-    letter-spacing: inherit;
+    letter-spacing: 0.06em;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     cursor: pointer;
     background-color: var(--accent-color);
     color: var(--footer-logo-hero-mainbackgr-color);
-    padding: 10px 24px;
+    padding: 10px 32px;
     border: transparent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -194,7 +199,7 @@ ul {
 
 /* Section benefits */
 
-.sect-benefits {
+.section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -230,24 +235,18 @@ ul {
     column-gap: 30px;
 }
 
-/* section what we do */
-
-.sect-what-we-do {
-    padding-bottom: 94px;
+.benefits-item {
+    width: calc((100%-30*30)/4);
 }
+
+/* section what we do */
 
 .sect-what-we-do .list {
     display: flex;
     column-gap: 30px;
 }
 
-
 /* TEAM */
-
-.team {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .team,
 .buttons-portfolio {
@@ -262,11 +261,12 @@ ul {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-    padding-bottom: 30px;
 }
 
-.team-item img {
-    margin-bottom: 30px;
+.team-descr {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
 }
 
 .team-names {
@@ -316,11 +316,6 @@ ul {
 
 /* PORTFOLIO PAGE */
 
-.portfolio-sect {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .btns-sorting,
 .portfolio-list {
     display: flex;
@@ -347,6 +342,8 @@ ul {
 }
 
 .buttons-portfolio {
+    /* box-sizing: border-box;
+    height: 38px; */
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -356,7 +353,7 @@ ul {
     background: var(--buttons-portfolio-background-team-color);
     border-radius: 4px;
     border-color: transparent;
-    padding: 6px 22px;
+    padding: 4px 20px;
 }
 
 .buttons-portfolio:hover,
@@ -372,6 +369,8 @@ ul {
     box-sizing: border-box;
     background: var(--footer-logo-hero-mainbackgr-color);
     border: 1px solid var(--boreder-color);
+    /* width: calc((100%-60)/3); */
+    width: 370px;
 }
 
 .sorting-item-name {
@@ -389,7 +388,6 @@ ul {
 .sorting-item-text {
     padding: 20px 24px;
 }
-
 
 /* hidden not using headers */
 
