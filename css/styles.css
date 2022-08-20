@@ -241,6 +241,10 @@ img {
 
 /* section what we do */
 
+.sect-what-we-do {
+    padding-top: 0;
+}
+
 .sect-what-we-do .list {
     display: flex;
     column-gap: 30px;
